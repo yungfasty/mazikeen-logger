@@ -1,0 +1,31 @@
+settings:
+  #Com qual tamanho o arquivo será compactado.
+  zip-size: 4128
+  #Comandos que não vão gerar log
+  commands-blacklist:
+    - "login"
+    - "logar"
+    - "registrar"
+    - "register"
+    - "ls"
+    - "loginstaff"
+  #Blocos que vão gerar log
+  blocks-blacklist:
+    - "TRAPPED_CHEST"
+    - "CHEST"
+    - "ENDER_CHEST"
+    - "MOB_SPAWNER"
+    - "ENDER_STONE"
+    - "OBSIDIAN"
+    - "BEACON"
+
+#Mensagens que vão ficar no arquivo.log
+messages:
+  time-format: "dd/MM/yyyy - hh:mm:ss"
+  log-format: "[{time}] {action}"
+  command-log: "{player} usou o comando \"{command}\" em ({world} {x} {y} {z})"
+  chest-log: "{player} abriu um bau em ({world} {x} {y} {z})"
+  connection-log: "{player} {type} no servidor"
+  drop-log: "{player} dropou x{amount} {type} em ({world} {x} {y} {z})"
+  place-log: "{player} colocou {type} em ({world} {x} {y} {z})"
+  break-log: "{player} colocou {type} em ({world} {x} {y} {z})"
